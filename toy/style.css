@@ -1,0 +1,35 @@
+*{
+    padding:0; 
+    margin:0;
+    /* overflow: hidden; */
+}
+body{
+    background-color: cornflowerblue;
+
+}
+#container{
+    width: 900px;
+    height: 700px;
+    background-color: white;
+    border: 1px solid black ;
+    margin: auto;
+    display: flex;
+}
+
+.paintingArea{
+    flex: 0 1 800px;
+    background-color: none;
+    border: 1px solid black ;
+}
+.tools{
+    flex: 1 0 auto;
+    border: 1px solid black ;
+}
+
+.bubble,.eraseAll{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(211, 220, 238);
+    border: 1px solid black ;
+}

@@ -11,18 +11,18 @@ function setup() {
     // createCanvas가 그 첫 선언문입니다. 
     createCanvas(windowWidth, windowHeight);
     stroke(255); // 선색을 흰색(255)으로 지정
-    frameRate(10);
+    frameRate(5);
 }
 function draw(){
     background(0);
     line(randomXSt,randomYSt,randomXEn,randomYEn)
     if(start === false){
-        randomXSt += random(-50,50);
-        randomYSt += random(-50,50);
+        randomXSt += random(-75,75);
+        randomYSt += random(-75,75);
         start = true;
     }else if(start === true){
-        randomXEn += random(-50,50);
-        randomYEn += random(-50,50);
+        randomXEn += random(-75,75);
+        randomYEn += random(-75,75);
         start = false;
     }
 
